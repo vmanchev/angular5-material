@@ -1,11 +1,11 @@
 import { browser, by, element } from 'protractor';
 
 export class AppPage {
-  navigateTo() {
-    return browser.get('/');
+  navigateToLogin() {
+    return browser.get('/login');
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  getFormTitle() {
+    return element(by.css('app-login mat-card-title')).getText();
   }
 }

@@ -1,0 +1,21 @@
+mat-toolbar {
+  margin-bottom: 50px;
+}
+
+.nav-main-menu {
+  visibility: hidden;
+}
+
+.nav-sidebar-toggle {
+  visibility: visible;
+}
+
+@media screen and (min-width: 960px) {
+  .nav-main-menu {
+    visibility: visible;
+   }
+
+   .nav-sidebar-toggle {
+    visibility: hidden;
+  }
+}

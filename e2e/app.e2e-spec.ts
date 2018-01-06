@@ -7,8 +7,8 @@ describe('angular5-material App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+  it('should display login form', () => {
+    page.navigateToLogin();
+    expect(page.getFormTitle()).toEqual('Reactive form');
   });
 });

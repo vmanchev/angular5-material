@@ -1,0 +1,65 @@
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sidenav>
+    <mat-nav-list>
+      <a routerLink="/" (click)="sidenav.close()" mat-list-item>
+        <mat-icon mat-list-icon>home</mat-icon>
+        <span mat-line>Home</span>
+      </a>
+
+      <a routerLink="/login" (click)="sidenav.close()" mat-list-item>
+        <mat-icon mat-list-icon>lock_outline</mat-icon>
+        <span mat-line>Login</span>
+      </a>
+
+      <a routerLink="/register" (click)="sidenav.close()" mat-list-item>
+        <mat-icon mat-list-icon>add_box</mat-icon>
+        <span mat-line>Register</span>
+      </a>
+
+      <a routerLink="/full" (click)="sidenav.close()" mat-list-item>
+        <mat-icon mat-list-icon>add_box</mat-icon>
+        <span mat-line>Full form</span>
+      </a>
+
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.open()" class="nav-sidebar-toggle">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span> Big Header</span>
+      <span class="blank-grow"></span>
+      <div class="nav-main-menu">
+        <a routerLink="/" mat-button>
+          <mat-icon mat-list-icon>home</mat-icon>
+          <span mat-line>Home</span>
+        </a>
+
+        <a routerLink="/login" mat-button>
+          <mat-icon mat-list-icon>lock_outline</mat-icon>
+          <span mat-line>Login</span>
+        </a>
+
+        <a routerLink="/register" mat-button>
+          <mat-icon mat-list-icon>add_box</mat-icon>
+          <span mat-line>Register</span>
+        </a>
+
+        <a routerLink="/full" mat-button>
+          <mat-icon mat-list-icon>lock_outline</mat-icon>
+          <span mat-line>Full form</span>
+        </a>
+
+      </div>
+    </mat-toolbar>
+
+    <router-outlet>
+
+
+    </router-outlet>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
